@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Set a max width for the main container of the application*/
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  flex:1;
+  flex-direction: row;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style the heading h1*/
+h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Style the list of contacts */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* Style the button for each contact */
+button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background-color: #88c9ea;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a5f8d3;
+}
+
+/* Style the active contact info */
+.contact-info {
+  padding: 10px;
+  background-color: #a5f8d3;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.contact-info h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 15px;
 }
